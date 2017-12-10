@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_title_height"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <!-- 商品、详情、评价切换的控件 -->
+                <com.yhm.wst.scrollablelayoutlib.PagerSlidingTabStrip
+                    android:id="@+id/pagerSlidingTabStrip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    app:pstsTabPaddingLeftRight="35px"
+                    app:pstsIndicatorPadding="35px"
+                    app:pstsIndicatorColor="@color/primary_color"
+                    app:pstsTabTextColor="@color/text_color"
+                    app:pstsIndicatorHeight="3dp"
+                    app:pstsDividerColor="@android:color/transparent"
+                    app:pstsShouldExpand="false"
+                    app:pstsTextAllCaps="false"
+                    app:pstsUnderlineHeight="0dp" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="图文详情"
+                    android:textColor="@color/primary_color"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/icon_back" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.yhm.wst.view.NoScrollViewPager
+        android:id="@+id/vpContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

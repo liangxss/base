@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleBar">
+        <attr name="titleBarText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="DashLineView">
+        <attr name="drawableStart" format="reference"/>
+        <attr name="dashLineStyle" >
+            <enum name="smallGray" value="0"/>
+            <enum name="smallBlack" value="1"/>
+            <enum name="normalGray" value="2"/>
+            <enum name="normalBlack" value="3"/>
+            <enum name="bigGray" value="4"/>
+            <enum name="bigBlack" value="5"/>
+            <enum name="hugeGray" value="6"/>
+            <enum name="hugeBlack" value="7"/>
+            <enum name="bigHugeGray" value="8"/>
+            <enum name="bigHugeBlack" value="9"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CommonTitleView">
+        <attr name="orientation">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+
+    </declare-styleable>
+
+    <!-- 水平滚动的viewpager的一些属性定义 -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsIndicatorPadding" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTabTextColor" format="color" />
+        <attr name="pstsTabTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SlideDetailsLayout">
+        <!-- float value for indicate the moment of switch panel-->
+        <attr name="percent" format="float"/>
+        <!-- how long the animation keep-->
+        <attr name="duration" format="integer"/>
+        <!-- default panel to show after init-->
+        <attr name="default_panel" format="enum">
+            <enum name="front" value="0"/>
+            <enum name="behind" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

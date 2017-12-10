@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#e0000000"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/blankSpace"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            style="@style/normalText"
+            tools:text="商品名称"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvBarcode"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            style="@style/normalText"
+            tools:text="条码：31521"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvStoreCode"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            style="@style/normalText"
+            tools:text="店内码：65656"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvUnits"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="单位：个" />
+
+            <TextView
+                android:id="@+id/tvSpec"
+                style="@style/smallText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="规格:" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/etRealQuantity"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@null"
+                android:hint="数量"
+                android:inputType="number"
+                style="@style/normalText"/>
+
+            <TextView
+                android:id="@+id/tvBtnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/primary_color"
+                android:gravity="center"
+                android:text="确定"
+                android:padding="10dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
